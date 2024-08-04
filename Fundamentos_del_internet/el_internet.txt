@@ -1,0 +1,11 @@
+El internet es una red de redes, con esto queremos decir que es una red de multiples conexiónes que
+conecta a infinidad de dispositivos para intercambiar información entre sí.
+Nadie está a cargo del internet "nadie está a su cargo y todos estamos a su cargo a la vez". Muchos
+entes se encargar de regularla y cuidar el contenido que está disponible en el, brindando la garantía
+para poder acceder a la red desde cualquier lugar.
+
+¿Cómo nos conectamos a el?
+Sabemos que tenemos la disponibilidad de conectarnos a internet desde multitud de dispositivos y lugares,
+la cantidad de dispositivos que permiten la conexión a internet va desde los de uso común, como celulares,
+tablets y computadoras, hasta dispositivos poco convencionales como nevereas, lavadoras y más dispositivos
+IoT. Pero ¿cómo nos conectamos a la red?, ¿cómo se interpreta y envia la información que compartimos?
