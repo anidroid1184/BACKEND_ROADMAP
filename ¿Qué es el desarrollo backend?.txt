@@ -1,0 +1,3 @@
+El desarrollo "BACKEND" se centra principalmente en el "lado del servidor"(server-side) encargando de hacer las
+APIS, conexiones, consultas, etc... necesarias para brindar a un usuasrio una experiencia completa en colaboracion 
+con el Frontend.
