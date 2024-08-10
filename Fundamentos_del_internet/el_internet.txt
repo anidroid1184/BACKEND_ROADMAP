@@ -14,4 +14,15 @@ Entre otros medios.
 Pero, ¿cómo interpretamos que se envio?, ¿cómo sabemos cuantos 1's y 0's son?, de hecho lo podemos saber esto de una manera sencilla, hay algo que denominamos "ancho de banda", la cual dicta cuantos digitos se envian por segundos, en este caso bits.
 
 Y en la red ¿cómo se envián?
-Se divide la gran cadena de bits en n partes, estas partes se conocen como "Paquetes", los cuales son más faciles de enviar y con esto se asegura mayor integridad de los datos.
+Se divide la gran cadena de bits en "n" partes, estas partes se conocen como "Paquetes", los cuales son más faciles de enviar y con esto se asegura mayor integridad de los datos.
+Y ¿Cómo saben a donde deben llegar?
+Para esto contamos con las dirección IP, las cuales brinda una direción a la cual estos paquetes deben de llegar, más sin embargo, todos los paquetes no siguen una misma ruta, en su mayoría sigue rutas demasiado diversas, para direccionar los paquetes hasta su ruta de destino tenemos los ENRUTADORES, los cuales van redirecciónando los paquetes, a traves de multitud de rutas o direcciones, hasta llegar a su destino.
+Ahora, una nueva duda, partamos de que las direcciones IP están conformadas por números, los cuales, cada conjunto de numeros, separados por puntos, denominan una dirección especifica.
+¿Cómo hacen los navegadores para transcribir de un nombre especifico que buscamos en el navegador a una dirección IP?
+Para esto se usan los DNS(Sistema de nombres de dominio), estos se encargan de consultar y retornar la dirección IP del sitio que buscamos.
+
+Ahora, ya tenemos como se identifican lso sitios en internet(IP), como se transportan(Paquetes), como obtenemos la dirección IP que buscamos(DNS) y como se transportan los archivos que enviamos(paquetes). Ahora, los paquetes se pueden perder en el recorrido hasta llegar a hasta nosotros, eso puede afectar gravemente la integridad del archivo, ¿Cómo nos aseguramos de que llegen todos los paquetes de una archivo?
+
+Para esto se usa el protocolo TCP(protocolo de protección de transmiciones), el cual se encarga de verificar que todos los paquetes esten antes de que permitir el paso del archivo, se encarga de enlistar todos los paquetes del archivo que transferimos y en caso de estar todos esten permite el ingreso del archivo, caso contrarío, rebotara una alerta avisando cual o cuales paquetes faltan.
+
+En resumen, en internet tenemos grandes herramientas que nos permiten interconectarnos a la red, trasnferir archivos y recibirlos, ademas de que salvaguardan la integridad de nuestros archivos, evitando que se corrompan en su envio.
