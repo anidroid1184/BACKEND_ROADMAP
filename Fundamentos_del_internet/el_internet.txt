@@ -14,7 +14,7 @@ Entre otros medios.
 Pero, ¿cómo interpretamos que se envio?, ¿cómo sabemos cuantos 1's y 0's son?, de hecho lo podemos saber esto de una manera sencilla, hay algo que denominamos "ancho de banda", la cual dicta cuantos digitos se envian por segundos, en este caso bits.
 
 Y en la red ¿cómo se envián?
-Se divide la gran cadena de bits en "n" partes, estas partes se conocen como "Paquetes", los cuales son más faciles de enviar y con esto se asegura mayor integridad de los datos.
+Se divide la gran cadena de bits en "n" partes, estas partes se conocen como "Paquetes", los cuales son más faciles de enviar y con esto se asegura mayor integridad de los datos. Estos paquetes constan de dos partes, el encabezado, que contiene la informacion sobre el paquete como la longitud del paquete, su origen y destino y el paquete en si.
 Y ¿Cómo saben a donde deben llegar?
 Para esto contamos con las dirección IP, las cuales brinda una direción a la cual estos paquetes deben de llegar, más sin embargo, todos los paquetes no siguen una misma ruta, en su mayoría sigue rutas demasiado diversas, para direccionar los paquetes hasta su ruta de destino tenemos los ENRUTADORES, los cuales van redirecciónando los paquetes, a traves de multitud de rutas o direcciones, hasta llegar a su destino.
 Ahora, una nueva duda, partamos de que las direcciones IP están conformadas por números, los cuales, cada conjunto de numeros, separados por puntos, denominan una dirección especifica.
