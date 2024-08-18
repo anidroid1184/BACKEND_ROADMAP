@@ -1,0 +1,76 @@
+Solicitudes y respuestas HTTP
+
+Al momento de interactuar entre cliente y servidor, hay varias partes de la solicitud y respuesta que representan varias cosas, las veremos a continuación:
+
+SOLICITUD HTTP
+
+PUT /users/1 HTTP/1.1
+Host: example.com
+Content-type: text/json
+{
+ "key1":"value1",
+ "key2":"value2",
+ "array1":["value3","value4"]
+}
+
+
+En la primera lineal notamos las siguientes partes:
+
+
+PUT--> Método usado para interactuar con el servidor, en este caso el metódo PUT, que nos permite actualizar un recurso ya existente.
+
+users/1 --> Recurso solicitado, puede ser una pagina web especifica hasta un credencial, etc...
+
+HTTP/1.1 --> Versión de HTTP usada.
+
+En la segunda línea vemos los encabezados, los cuales indican información especifica y no distinguen entre mayúsculas y minúsculas:
+
+Host--> Especifica el host del servidor y de donde se solicita el recurso
+
+User-Agent--> Informa al servidor web de la aplicación que realiza la solicitud, también puede informar sobre el sistema operativo(SO) que la hace.
+
+Accept --> Informa al servidor que tipo de respuesta aceptara el cliente.
+
+Accept-Language--> Informa al servidor que lenguaje prefiere y el cliente y opcionalmente su configuración regional preferida.
+
+Content-type--> Indica el tipo de contenido que se transmite en el contenido de la solicitud, en este caso text/json
+
+Las siguientes líneas son el cuerpo de la solicitud:
+
+{
+ "key1":"value1",
+ "key2":"value2",
+ "array1":["value3","value4"]
+}
+
+
+Respuestas HTTP
+
+
+HTTP/1.1 200 OK
+Date: Fri, 11 Feb 2022 15:00:00 GMT+2
+Server: Apache/2.2.14 (Linux)
+Content-Length: 84
+Content-Type: text/html
+
+<html>
+  <head><title>Test</title></head>
+  <body>Test HTML page.</body>
+</html>
+
+
+En la primera línea observamos:
+
+HTTP/1.1 --> Versión de la respuesta
+
+200 OK --> Código de estado, el cual indica la respuesta del servidor, y la frase motivo, la cual es la representación textual del código de estado.
+
+El las siguientes líneas(2-5) vemos el encabezado de la respuesta HTTP, el cual puede tener información adicional relevante para el cliente.
+
+Date--> Fecha y hora especifica en la que se genero la respuesta HTTP, además de tener información de la zona.
+
+Server--> Describe el software del servidor utilizado para generar la respuesta, en este caso también nos brinda el SO.
+
+Content-Length --> Describe la longitud de la respuesta.
+
+Content-Type --> Describe el formato(tipo del medio del recurso) usado para brindar la respuesta.

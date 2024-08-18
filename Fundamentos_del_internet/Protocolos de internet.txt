@@ -1,0 +1,51 @@
+Protocolos de internet:
+
+La transferencia de internet es una gran ventaja que tenemos actualmente, podemos enviar información desde cualquier lugar a cualquier otro en cuestión de segundos, procesos que demoraban hasta años, como enviar una carta, ahora a través de un correo pueden realizarse de manera casi instantánea.
+Pero ¿Cómo el navegador sabe lo que queremos? y ¿Como se comunica con el servidor para obtenerlo?
+
+Esto se logra con ayuda del famoso protocolo HTTP y HTTPS:
+
+El protocolo HTTP por sus siglas  Protocolo de Transferencia de Hiper Texto, permite las solicitudes a los sitios web gracias a sus diversas componentes.
+Cuando nos conectamos a un sitio web, podemos observar en nuestro navegador una URL, la cual tiene varios apartador que nos permiten ubicar el recurso especifico que necesitamos:
+
+Expliquémoslo con el la ruta: https://www.ejemplo.com/pagina.html%22
+
+"https://" es el esquema, este esquema define el protocolo que estamos usando para acceder al sitio web, en este caso usamos el protocolo https.
+"www.ejemplo.com" es el dominio, está es la dirección IP traducida por el DNS a la cual nos estamos conectando.
+
+"pagina.html" esta es la ruta, la pagina web especifica donde queremos conectarnos
+
+"%22" este es el parámetro, valores adicionales que se pueden pasar a través de la ruta y separados normalmente por "&", en este caso es separado por "%"
+
+"22" Fragmento, es la referencia especifica a un recurso del sitio web.
+
+Al juntar todos estas partes de la url, permite navegar a partes especificas de un sitio web.
+
+Y que tiene que ver el HTTP y HTTPS en todo esto, sencillo:
+
+Cuando estamos interactuando con el servidor realizamos constantemente solicitudes, estas solicitudes tienen varias partes:
+
+Encabezado: Incluyen información adicional como la ruta, cookies, autenticación, entre otros.
+Versión: Es la versión del protocolo que estamos usando, normalmente son o HTTP/1.1 O HTTP/2.
+Ruta: Es la url a la que deseamos ingresar, la ruta de ubicación del recurso en el servidor.
+Método: Son las multiples acciones que podemos y queremos realizar en un servidor, como lo son:
+
+GET: Se utiliza para obtener información del servidor.
+POST: Se utiliza para enviar datos al servidor.
+PUT: Se utiliza para actualizar un recurso existente en el servidor.
+DELETE: Se utiliza para eliminar un recurso existente del servidor.
+
+Estos son los métodos más comunes, pero también hay otros.
+
+Cuando realizamos una solicitud al servidor, haciendo uso de un método, el servidor responde ya sea con la información, pero también, con códigos de estado los cuales indican en que estado está la solicitud que realizamos, y estos se agrupan por rangos:
+
+100-199: Respuestas informativas, estos indican se ha recibido y se está procesando.
+200-299: Respuestas exitosas, indican que la solicitud ha sido procesada con éxito.
+300-399: Redirecciones, indica que el recurso solicitado se ha redirigido a otra ubicación diferente.
+400-409: Errores por parte del cliente, indica que el recurso solicitado por parte del cliente no ha sido encontrado, como el famoso "404"
+500-599: Errores por parte del servidor, indican que ha ocurrido un error por parte del servidor al momento de procesar la solicitud.
+
+Ahora, el protocolo HPTTS es el protocolo HTTP pero cuidando y preservando la seguridad del cliente, dado a que hacemos transacciones y diversas cosas privadas es internet, es natural querer preservar esos procesos, por lo mismo, existe el protocolo HPTTS.
+
+
+

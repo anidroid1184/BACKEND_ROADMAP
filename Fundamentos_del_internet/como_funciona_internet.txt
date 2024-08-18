@@ -1,0 +1,30 @@
+¿Cómo funciona internet?
+
+Internet es una red de redes que conectan multiples dispositivos a traves de conmutadores interconectados entre si, esta conexión se da via cable o de manera inalámbrica.
+
+¿Qué es un servidor web?
+
+Un servidor es una maquina, similar a un computador, que ofrece un servicio de procesamiento especifico, con esto nos referimos a que cumple funciones especificas como almacenamiento de datos, calculo de consultas, etc...
+Existen varios tipos de servidores web, estos reciben su nombre debido a que cumplen un servicio constante y están pensados para usarse en complemento a proyectos o productos especifcos. Los tipos de servidores web van desde los DataBase, almacenamiento, VPC, entre otros.
+
+Otra cosa a destacar de los servidores es que dependiendo de su tipo tendrán características diferentes en el software que les permita cumplir con la solicitud requerida por el usuario.
+
+Un servidor web tiene la capacidad también de implementar medidas de seguridad contra ataques y también responder a miles de solicitudes por segundo.
+Estas solicitudes nos permiten interactuar y cargar los sitios web que usamos día a día.
+
+Sitios web
+
+Los sitios web son un conjunto de paginas web, las cuales interactúan entre ellas con hipervincuulos para brindar las diferentes funcionalidades de un sitios web.
+Cada diferente click que da te conduce a una diferente pagina web de un mismo sitio web
+Los sitios web cumplen diversas funciones dependiendo su enfoque.
+
+Una pagina web es un documento que contiene diversa información de interacción y estructarción, con el cual interactua el usuario.
+
+Un navegador web
+
+Se encarga de transformar las direccioes IP en las búsquedas que realizamos, a estas búsquedas se les llaman dominios, estos dominios web están asociados a un sitio web el cual tiene una dirección IPv4
+
+Hospedaje web:
+
+El hospedaje web es el cual permite a los desarrolladores hacer accesibles sus sitios web, dependiendo de si es virtual (escalable) o física(hadware limitado) o nube, presentara una ventaja u otra.
+
