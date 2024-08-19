@@ -1,0 +1,19 @@
+Más protocolos de Internet:
+
+Aparte del HTTP, HTTPS Y TLC, hay otros protocolos que se usan habitualmente en los sitios web, ahora veremos una breve presentación de estos:
+
+- Protocolo de Configuración Dinámica del Host(DHPC)--> Mantiene un registro de los dispositivos en la red y sus direcciones IP, cuando nos conectamos a la red, este nos brinda una dirección IP con la cual interactuar en la red, para conectarnos a este usamos el protocolo UDP.
+
+- Protocolo del Sistema de Nombres de Dominios --> Se encarga de traducir lo que buscamos a direcciones IP, cuando buscamos algo en el motor de búsqueda, se encarga de buscar entre multiples direcciones, los resultados más parecidos a lo que buscamos, trayendo de regreso la conexión iP para que nos podamos conectar.
+
+- Protocolo de Acceso a Mensajes de Internet(IMAP) --> Se encarga de descargar los correos electrónicos y gestionar el buzón de mensajes en el servidor que almacena los correos.
+
+- Protocolo Simple de Transferencia de Correo(SMTP) --> Permite a los clientes enviar correos electrónicos y mensajes a través de un servidor SMTP, también es posible recibir mensajes pero se usa mas el IMAP.
+
+- Protocolo de Oficina de Correos(POP) --> Es un protocolo antiguo que se usa para descargar correos electrónicos a un cliente de correos electrónicos. Este elimina los correos electrónicos del servidor una vez los descarga en un dispositivo local. Se usa más que todo en automatización de correos electrónicos al ser un protocolo más sencillo que IMAP.
+
+- Protocolo de Transferencia de Archivos(FTP) --> Permite enumerar, enviar, recibir y borrar archivos en un servidor. Para su uso se necesita un cliente local FTP.
+
+- Protocolo Secure Shell(SSH) --> Permite conexiones a maquinas remotas de forma segura, se pueden ejecutar comandos en servidores de forma remota, también todos los datos enviados son cifrados.
+
+- Protocolo de Transferencia de Archivos SSH(SFTP) --> Permite transferir archivos con el usando el protocolo SSH de forma segura. La mayoría de clientes FTP también admiten el uso de SFTP.

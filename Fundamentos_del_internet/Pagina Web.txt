@@ -1,0 +1,14 @@
+Pagina Web:
+
+Es un documento que está formado principalmente por HTML, CSS y JS. Esta cumple una sola función en si y puede también vincularse con otras paginas web.
+
+Sitios Web:
+
+Es un conjunto de paginas web interconectadas y en búsqueda de brindar un sistema especifico para un usuario, aunque su nivel de interacción con el usuario es poco.
+Normalmente en los sitios web solo accedemos a tráves de una URL, no creamos una cuenta ni hacemos transferencias.
+
+Aplicación Web:
+
+Es bastante similar a los sitios web, pero tienen un nivel mucho mayor de interacción, para esto mismo el usuario crea una cuenta, la cual va a adaptar la aplicación web a los gustos e intereses del cliente.
+
+La diferencia crucial entre sitio web y aplicación we es el nivel de interacción con el usuario, ya que la aplicación web se centra en recopilar datos para adaptarse a los gustos del usuario, el sitio web es más bien informativo y no busca generar esa interacción con el.

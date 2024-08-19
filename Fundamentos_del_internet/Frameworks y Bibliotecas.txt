@@ -1,0 +1,11 @@
+Frameworks y Bibliotecas:
+
+Al momento de desarrollar código, muchas veces nos vamos a enfrentar a situaciones que usualmente ya tienen una resolución existente en internet, por ejemplo, validar un correo, validar una tarjeta de crédito/Debito. Todas estas operaciones son complejas de validar, dado a que hay varios estándares complejos que se deben seguir solamente para poder realizar una tarea de estas, por lo mismo existen las bibliotecas.
+
+Las bibliotecas son fragmento de código reutilizables las cuales nos ayudan a implementar funciones especificas en nuestra aplicación, por ejemplo, si deseas replicar una calculadora científica, en algún momento necesitaras implementar funciones como derivar o integrar, o incluso constantes, estas funciones no se encuentran por defecto en varios lenguajes, por lo mismo, necesitas importar librerías que tengan estas funciones.
+
+Ahora, sabemos que las bibliotecas nos ayudan a implementar funciones especificas en nuestra aplicación, pero ¿Qué son los Frameworks?
+
+Los Frameworks por traducción directa son "Marcos de trabajo", en la industria hay varios estándares de desarrollo, los cuales son más fáciles de llevar de un desarrollo, un framework nos brinda una forma de trabajar a partir de la cual podemos orientar nuestro desarrollo.
+
+Una forma de ver esto es como una receta de una hamburguesa, el framework es la receta paso a paso la cual nos permite llegar a un resultado especifico si seguimos las instrucciones sin hacer ninguna modificación, pero también nos permite modificar ciertos aspectos para hacer nuestra propia hamburguesa.
