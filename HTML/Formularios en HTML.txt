@@ -1,0 +1,57 @@
+Formularios en HTML
+
+¿Alguna vez has hecho alguna compra en internet? Es posible que si, de ser así, has hecho uso de los formularios.
+Estos nos sirven para bastantes cosas, como rellenar encuentras, realizar pagos en línea, entre otras funciones.
+
+Los formularios cuentas de varias partes donde podemos ingresar nuestra información, dependiendo el tipo de información que vamos a suministrar, se contara con una etiqueta diferente. También podemos asociar estos formularios a un endpoint y un método, usando atributos en la etiqueta(Un atributo es un parámetro que brinda información adicional de la etiqueta y se coloca dentro de la etiqueta principal).
+
+Ahora veremos como se define básicamente un formulario, sus diferentes etiquetas y un ejemplo de como usaríamos en conjunto con los endpoints y métodos HTTP:
+
+<form> --> Esta es la etiqueta principal que indica a HTML donde vamos a situar nuestro formulario.
+
+<label for="name">Nombre:</label> --> la etiqueta label nos permite agregar una descripción al campo de entrada, se puede 				      pensar como el texto antes del campo de entrada.
+
+<input type="submit"> --> Los usamos para crear un botón para enviar al servidor el formulario
+
+<button type="submit">Enviar>/button> --> Esta es otra opción para enviar el formulario
+
+
+</form>
+
+Nota: Podemos cerrar algunas etiquetas poniendo un "/" al final de estas
+
+Podemos crear varios tipos de etiquetas para los diferentes campos que necesitamos como:
+
+<input type="password" /> --> Funciona para enmascarar la contraseña.
+<input type="text" /> --> Permite ingresar algo de texto en el formulario.
+<input type="email" /> --> Permite ingresar solo correos electrónicos.
+<input type="number" /> -->Crea un campo de entrada solo para números.
+<input type="radio" /> --> Permite marcar únicamente una opción por grupo.
+<input type="file" /> --> Crea un campo de entrada para cargar un archivo desde el dispositivo del usuario.
+
+<select> --> Permite crear una lista desplegable.
+
+Ejemplo de uso:
+
+<select name="food">
+	<option value="chocolate">Chocolate</option>
+	<option value="ice_cream">Icre-cream</option>
+</select>
+
+Podemos notar como las etiquetas <option> brindan las diferentes opciones de la lista, también tiene le atributo "value" el cual sirve para el procesamiento de la pagina web.
+El atributo "name" se usa para asignarle un nombre al elemento de la lista desplegable, el cual se usara al momento de enviar el formulario al servidor.
+
+<textarea> -->Permite enviar un párrafo ajustable en el formulario, mucho más grande de lo que permite <text>
+
+
+action-->ruta o endpoint  en el servidor donde se desea enviar los datos del formulario
+method-->método HTTP que usamos para enviar esto al servidor
+
+<form action="/registration" method="POST">
+	<label form"username">Username</label><br>
+	<input type="text" name="username">
+</form>
+
+Este formulario permite enviar el nombre del usuario al endpoint "/registration" con el method="POST".
+
+De esta forma y combinando estas etiquetas puede hacer un formulario básico funcional.
