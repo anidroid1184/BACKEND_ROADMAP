@@ -1,0 +1,171 @@
+CSS(Cascading Style Sheets)
+
+Las hojas de estilo nos permiten brindar una presentación agradable  nuestra pagina web, si solo usamos html la pagina web se verá tosca. Ahora veremos los diferentes elementos que componen las hojas de estilo y nos permiten estilizar nuestro sitios web:
+
+
+En CSS podemos seleccionar los elementos de html, para poder hacer esto vamos a tener que agregar a la etiqueta <head> lo siguiente:
+
+<head>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+La etiqueta link permite vincular al HTML con hojas de estilo CSS, ahora, el atributo rel también puede indicarle al documento otro tipos de parámetros según lo que sea su valor:
+
+-stylesheet: Indica que se está vinculando la hoja de estilo CSS.
+
+-icon: Indica que el recurso vinculado es un icono o favicon.
+
+-preconnect: Indica que se debe realizar una conexión precia al recurso para mejorar el rendimiento.
+
+-nofollow: Indica que los motores de búsqueda no deben seguir el enlace.
+
+Ahora, CSS tiene varios elementos, los cuales son:
+
+-Selector: indica que elemento de HTML estamos seleccionando para estilizar.
+
+-Propiedad: Define qué aspecto se va a cambiar los elementos seleccionados.
+
+-Valor: Especifica el valor que se asigna a la propiedad.
+
+CSS cuenta con reglas, estas son declaraciones que definen como cuales elementos se van a estilizar y se definen de la sgte forma:
+
+
+p {
+	color:black;
+}
+
+En el siguiente bloque de declaración observamos:
+
+p--> Selector
+
+{ } --> Bloque de declaración
+
+color:black;--> Declaración: consta de propiedad(color) y valor(black)
+
+Selectores:
+
+-Selector de elementos--> En este tipo de selectores seleccionamos usando etiquetas, esto incluye a los elementos que se encuentren dentro de ella, ejemplo:
+
+
+<h1>
+	<p> Hola </p>
+
+</h1>
+
+h1 {
+	color:white;
+}
+
+
+En este caso la propiedad:"color", afectara también al elemento <p> con el valor:"white".
+
+-Selectores de ID: 
+Los ID son elementos son atributos globales que pueden ser usados en casi cualquier etiqueta, tienen como característica que son atributos UNICOS, por lo mismo, dos elementos html no pueden tener un mismo ID.
+
+Ejemplo de uso:
+
+<nav id="navigator"> </nav>
+
+#navigator {
+	color:blue>
+}
+
+Como podemos ver en el ejemplo, al usar un selector ID usamos "#" antes del nombre del ID.
+
+
+-Selectores de clases:
+
+Estos son elementos que a diferencia de los id, se pueden usar en varios elementos a la vez, sirve para cuando queremos que varios elementos tengan un estilo especifico.
+
+Ejemplo de uso:
+
+<nav class="sombra"> </nav>
+
+<p class="sombra"> </p>
+
+
+.sombra {
+
+	background-color: black;
+}
+
+Como podemos ver en ejemplo, al declarar una clase usamos ".", las clases son reutilizables, por lo que varias etiquetas pueden tener la misma clase.
+
+Ahora veremos casos de selección mucho más específicos:
+
+- Elemento con selector de clase:
+
+Usamos esto cuando queremos seleccionar un elemento que tenga una clase especifica:
+
+<p class="introduction"> </p>
+
+
+p.introduction {
+	margin:2px;
+}
+
+Nota: no dejamos espacio entre el selector y la clase.
+
+
+
+-Selectores de 	descendientes:
+Lo usamos cuando queremos seleccionar un elemento html que está dentro de otro elemento:
+
+Nota: Los elementos "hijo" son elementos contenidos dentro de otros, estos elementos "padre" pueden tener varios elementos dentro de si.
+
+<div id="blog">
+  <h1>Ejemplo</h1>
+  <div>
+    <h1>Primera sección</h1>
+    <p></p>
+  </div>
+  <p></p>
+</div>
+<div>
+  <h1>Segunda sección</h1>
+</div>
+
+
+#blog h1 {
+  color: blue;
+}
+
+En este caso seleccionamos solo el h1 que tiene el id "blog", dado a que dentro del elemento padre hay varias etiquetas h1.
+
+
+-Selectores secundarios:
+
+Estos son más específicos que los selectores descendientes, dado a que únicamente selecciona elementos que son directamente hijos de otro elemento.
+
+<div id="blog">
+  <h1>Ejemplo</h1>
+  <div>
+    <h1>Primera sección</h1>
+    <p></p>
+  </div>
+  <p></p>
+</div>
+<div>
+  <h1>Segunda sección</h1>
+</div>
+
+#blog > h1 {
+	color:blue;
+}
+
+En este ejemplo seleccionamos únicamente el h1 que está dentro del div con id "blog".
+
+Este tipo de reglas o declaraciones únicamente se aplican en un único nivel de profundidad.
+
+
+Ahora también veremos un ejemplo de Pseudoclase, estas permiten a los desarrolladores seleccionar elementos en función de su estado.
+
+Ejemplo la Pseudoclase "hoover", la cual únicamente aplicara el estilo declarado cuando el ratón pase encima del elemento.
+Las Pesudoclases son muy útiles para crear efectos visuales a las paginas web.
+
+
+
+
+
+

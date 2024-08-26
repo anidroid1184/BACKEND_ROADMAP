@@ -1,0 +1,18 @@
+Modelo de caja
+
+El modelo de carta es una forma de organizar y estructurar los elementos de una pagina web, recordemos que en una pagina web queremos atraer la atención del usuario, hacer que la pagina sea atractiva y fácil de recorrer mejora mucho la experiencia de este. 
+Cada elemento que estilizamos lo  dividimos en 4 pares:
+
+El contenido:
+Esta es la parte que plasmamos en el html, puede incluir texto, imágenes, tablas, etc...
+
+El relleno(padding):
+Es como una margen que hay entre el contenido y el borde del elemento.
+
+El borde(border):
+Son los limites del elemento html.
+
+El margen(margin):
+Es la distancia que separa nuestro elemento de otros en la pagina web.
+
+Gracias a este modelo podemos modificar de distintas formas los elementos de nuestra pagina web para ajustarlos a el diseño que deseamos, dado a que cada parte del elemento podemos modificarla de forma aislada.

@@ -1,0 +1,13 @@
+Enlaces útiles:
+
+Referencia de CSS (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+HTML y CSS: diseño y creación de sitios web, Jon Duckett
+
+https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/
+
+Guía definitiva de CSS, Eric Meyer  
+
+https://www.amazon.com/CSS-Definitive-Guide-Visual-Presentation/dp/1449393195/

@@ -1,0 +1,12 @@
+Flujo del documento
+
+Al momento de cargar un documento html, los elementos tendrán dos formas predeterminadas de mostrarse en pantalla, las cuales son:
+
+
+Block:
+Ocupan todo el ancho de la pagina posible, cada que agregamos un nuevo elemento este se mostrar en una línea nueva.
+Los elementos con está presentación predeterminada se les nombra "elementos de nivel de bloque".
+
+Inline:
+Tienen como características que todos los elementos trataran de mostrarse en una sola línea.
+
