@@ -1,2 +1,3 @@
 Accesibilidad Web
 
+La accesibilidad web permite a personas que tengan diferentes tipos de discapacidades, acceder a internet gracias a softwares especializados. Con un diseño de web bien estructurado, uso de elementos html con buenas prácticas y generando un diseño web contemplando la accesibilidad web desde un inicio, contribuimos a que estos software puedan operar sin tener inconvenientes.

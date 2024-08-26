@@ -1,0 +1,21 @@
+Enlaces útiles
+
+Referencia de elementos HTML (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+El elemento form (Mozilla)
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+
+¿Qué es el Document Object Model? (W3C)
+
+https://www.w3.org/TR/WD-DOM/introduction.html
+
+ARIA en HTML (W3C a través de GitHub)
+
+https://w3c.github.io/html-aria/
+
+Prácticas de creación ARIA (W3C)
+
+https://www.w3.org/TR/wai-aria-practices-1.2/

@@ -1,0 +1,11 @@
+DOM
+
+El DOM es la forma en la cual JavaScript procesa el documento HTML que le enviamos. El DOM traduce: Modelo de Objetos del Documento, lo que nos da una referencia de lo que puede llegar a hacer.
+
+Al momento de que js procese cualquier documento html lo va a transformar en objetos. Estos objetos podemos imaginarlos como una especie de contenedores, pueden haber contenedores entre contenedores, estos contenedores inician y terminan en donde denotan las etiquetas de los documentos html.
+
+Por ejemplo, el objeto html, dentro de el tiene los objetos head y body, que cada uno de ellos  puede tener hasta miles de objetos dentro de ellos. El DOM se comporta como un arbol, el cual tiene diferentes ramas u objetos, permitiendo hacer consultas en ellos, editar o eliminarlos, todo desde el código js.
+
+El DOM nos permite manipular todos los elementos u "objetos" de nuestra pagina, sitio o aplicación web. Esto permite generar gran interactividad entre el usuario y la pagina web haciendo uso de eventos específicos en está para mostrar cosas en pantalla.
+Como lo pueden ser cuando el usuario hace click en un botón, recibe una alerta, ingresa un correo mal escrito, etc.. 
+Algunos frameworks como react permiten aumentar muchísimo más esa interacción, añadiendo animaciones a estos eventos y mejorando increíblemente la experiencia de usuario.

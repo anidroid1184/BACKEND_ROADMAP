@@ -1,1 +1,14 @@
 Más etiquetas en HTML
+
+
+En fuentes como las siguientes podemos consultar todas las etiquetas que existen usando etiquetas:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+Atributos y otras cosas de la etiqueta form:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+
+DOM
+https://www.w3.org/TR/WD-DOM/introduction.html
+
+Uso de ARIA
+https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
