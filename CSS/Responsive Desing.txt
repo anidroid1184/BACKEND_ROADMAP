@@ -1,0 +1,16 @@
+Responsive Desing
+
+El diseño responsivo se centra en mejorar la experiencia de usuario independientemente del dispositivo con el cual se conecten a nuestro sitio o aplicación web. Hoy en día muchos de nuestros dispositivos no comparten dimensiones, no comparten la misma cantidad de pixeles, ya sea por diseño, resolución, etc... Por lo mismo existe el diseño responsivo, no podemos desarrollar una pagina web sin pensar en como podemos hacer se que se adapte automáticamente a la mayoría de dispositivos que existen en el mercado.
+
+Para lograr este tipo de diseño se usan principalmente 3 técnicas:
+
+Rejillas flexibles:
+Permiten que los elementos del sitio web se ajusten según el tamaño de la pantalla. Permite que los sitios se adapten al dispositivo en el que se usan más fácilmente.
+
+Imágenes fluidas:
+Las imágenes fluidas se escalan para adaptarse al tamaño de la columna en la que se encuentran, esto con el fin de evitar que se vean pixeladas y perturben la experiencia de usuario.
+
+Consultas de medios(media querys):
+Estas definen un punto a veces llamado "breakpoint" o un tamaño predeterminado a partir del cual el diseño y elementos de la pagina web se organizaran de forma diferente para adaptarse más fácilmente a los sitios con esas características.
+
+Con estos pilares fundamentales y la creatividad del desarrollador web, podemos crear sitios web altamente responsivos y con gran adaptación a multitud de dispositivos.
