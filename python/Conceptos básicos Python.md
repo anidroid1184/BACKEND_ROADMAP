@@ -1,4 +1,4 @@
-Conceptos básicos Python
+#Conceptos básicos Python
 
 Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
 
@@ -13,9 +13,11 @@ x = 1
 En este caso definimos una variable tipo int, los int son variables que contienen exclusivamente números enteros.
 
 Si queremos llamarla vamos a tener que hacer referencia a ella como "x", dado a que es la forma en que la invocamos. SI queremos imprimirla en pantalla(terminal) podemos hacerlo a Trávez de la función "print":
-
+```
+python
 print(x)
 >>1
+```
 
 Como podemos observar al asignarle un valor a una letra cualquiera, la convertimos en una variable la cual tiene un valor especifico.
 
