@@ -7,14 +7,12 @@ En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿
 Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
 Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Ejemplo:
 ```
-python
 x = 1
 ```
 En este caso definimos una variable tipo int, los int son variables que contienen exclusivamente números enteros.
 
 Si queremos llamarla vamos a tener que hacer referencia a ella como "x", dado a que es la forma en que la invocamos. SI queremos imprimirla en pantalla(terminal) podemos hacerlo a Trávez de la función "print":
 ```
-python
 print(x)
 >>1
 ```
