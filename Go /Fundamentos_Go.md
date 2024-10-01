@@ -9,7 +9,6 @@ En las importaciones por convención, se importan los métodos específicos que 
 Ahora veremos un ejemplo de código básico en el cual hacemos la importación del modulo "math/rand", el cual usamos para generar una numero entero aleatorio:
 
 ```
-go
 package main --> importamos el paquete main
 
 import (
