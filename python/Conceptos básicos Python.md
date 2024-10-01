@@ -112,37 +112,35 @@ True	 and 	False 	= 	False
 False	 and 	False 	= 	False
 ```
 
-Constantes
+## Constantes
 
-Comentarios
+## Comentarios
 
-Strings
+## Strings
 
-Formatear Strings
+## Formatear Strings
 
-Input
+## Función Input
 
-Control de flujo (if-else)
+## Control de flujo (if-else)
 
-switch(match)
+## Switch(match)
 
+## Ciclos
 
-Ciclos
+## Funciones
 
-Funciones
+## variables globales
 
+## librerías
 
-variables globales
+## Importar librerías
 
-librerías
+## Módulos
 
-importar librerías
+## Paquetes
 
-módulos
-
-paquetes
-
-manejo de errores
+## Manejo de errores
 
 
 
