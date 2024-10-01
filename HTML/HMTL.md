@@ -1,10 +1,9 @@
-HMTL
-
+# HMTL
 HTML es un estándar en el mundo de la programación web, ya que brinda la estructura de básica de las paginas web que conocemos, sus siglas traducen: Lenguaje de Marcado de Hipertexto. Este lenguaje se centra en marcar y delimitar con etiquetas las diferentes secciones de una pagina web, teniendo etiquetas de texto, encabezados, imágenes, enlaces, párrafos, tablas, saltos de líneas, etc...
 Aunque hay diferentes frameworks que permiten el desarrollo de paginas web a través de métodos, HTML sigue siendo la base para todo el desarrollo web conocido.
 
 A continuación veremos la estructura básica de un documento html:
-
+```
 <!DOCTYPE html> --> Esta etiqueta le dice al navegador el formato del documento
 <html> --> Etiqueta de mayor nivel que contendrá el resto de etiquetas en ella
 <head> --> En esta sección van apartados como las hojas de estilo, algunos datos de la pagina, el lenguaje y el titulo de la pestaña
@@ -99,7 +98,9 @@ Con este fragmento podemos estilizar la tabla muy fácilmente:
 
 </html> --> Cierre de la etiqueta
 
-<!-- Esto es un comentario --> 
+<!-- Esto es un comentario -->
+
+``` 
 Secciones las cuales el código ignora y nos pueden servirnos para darle un orden.
 
 
