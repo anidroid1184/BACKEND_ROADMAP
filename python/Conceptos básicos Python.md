@@ -1,4 +1,4 @@
-#Conceptos básicos Python
+# Conceptos básicos Python
 
 Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
 
