@@ -1,6 +1,4 @@
-Bibliotecas
-
-
+# Bibliotecas
 Cuando incluimos una librería en nuestra pagina web, aplicación web o sitio web, estás pueden llamarse "dependencias", dado a que nuestro código depende de estas para funcionar correctamente.
 Las bibliotecas son código y funciones que podemos reutilizar que vienen de todo el internet, estas nos permite incluir diversas funcionalidades a nuestro código, para no tener que desarrollarlas desde 0.
 Hay algunas funciones que son complejas de implementar, por lo mismo, las dependencias nos ahorran gran parte del tiempo de nuestro desarrollo.
