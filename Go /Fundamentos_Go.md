@@ -71,10 +71,10 @@ func add(x int, y int) int {
 ```
 Como podemos notar, la sintaxis de la función es la sgte:
 
-#### El nombre de la función va después de la declaración de esta.
-#### Dentro de paréntesis debemos especificar los tipos de las variables internas de la función.
-#### Después de definimos el tipo del retorno de la función.
-#### Escribimos entre corchetes que hará la función.
+- El nombre de la función va después de la declaración de esta.
+- Dentro de paréntesis debemos especificar los tipos de las variables internas de la función.
+- Después de definimos el tipo del retorno de la función.
+- Escribimos entre corchetes que hará la función.
 
 Ahora, también podemos "factorizar" la declaración de tipos de variable, solo indicando el tipo en la última variable que la tenga.
 
