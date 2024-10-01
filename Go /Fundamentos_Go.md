@@ -1,20 +1,15 @@
-Tour por GO
+# Tour por GO
 
-Este lenguaje es uno de los más prometedores a futuro, debido a su facilidad de sintaxis y su capacidad de manejar memoria como se hace con C.
-Ahora, ¿cuales son las partes básicas de este?
+Go o Golang es un gran lenguaje que se ha convertido en uno de los más prometedores a futuro, debido a su facilidad de sintaxis y su capacidad de manejar memoria como se hace con C.
+Ahora, ¿cuales son las partes básicas de este? Vamos a verlas:
 
-Vamos a verlas:
-
---Paquetes 
-Cada programa en go se compone por paquetes, el paquete "main" es el básico de cualquier programa para su correcto funcionamiento.
-
-También podemos importar diferentes paquetes para agregar funciones soportadas a nuestro código.
-
+## Paquetes 
+Cada programa en go se compone por paquetes, el paquete "main" es el básico de cualquier programa para su correcto funcionamiento. También podemos importar diferentes paquetes para agregar funciones soportadas a nuestro código. 
 En las importaciones por convención, se importan los métodos específicos que queremos usar únicamente de la importación, aunque también podemos importar la librería completa.
-
 Ahora veremos un ejemplo de código básico en el cual hacemos la importación del modulo "math/rand", el cual usamos para generar una numero entero aleatorio:
 
-
+```
+go
 package main --> importamos el paquete main
 
 import (
@@ -26,11 +21,12 @@ func main(){
 	fmt.Println("Mi número favorito es", rand.Intn(10))
 	fmt.Println("El número favorito de mi novia es", rand.Intn(10))
 }
+```
 
---Importaciones
+## Importaciones
 
 Podemos realizar varias importaciones en una sola instrucción de importación factorizada, si hacemos varias importaciones es buena practica relizarlo así:
-
+```
 package main
 
 -->Importaciones:
@@ -58,7 +54,7 @@ import (
 func main() {
 	fmt.Println(math.Pi)--> Nombre exportado Pi
 }
-
+```
 -Funciones
 
 Las funciones son fragmentos de código reutilizables, los cuales son extremadamente útiles en programación, dado a que nos permite hacer nuestro código mucho más corto y menos repetitivo, por ende, más eficiente.
