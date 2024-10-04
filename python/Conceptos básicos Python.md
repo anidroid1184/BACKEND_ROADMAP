@@ -146,7 +146,7 @@ Linea 3
 '''
 ```
 Hay ciertar reglas opcionales que brindan una buena legebilidad a nuestro código, este conjunto de reglas se llaman el "PEP 8".
-Y puedes consultarlas en: [https://pep8.org/]
+Y puedes consultarlas en: https://pep8.org/
 ## Strings
 
 ## Formatear Strings
