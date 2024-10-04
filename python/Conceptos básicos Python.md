@@ -32,30 +32,37 @@ print(x)
 
 Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros) y "str"(string), más sin embargo también tenemos otros varios tipos:
 
-- float: Permite albergar números decimales con gran extensión y precisión.
+- int: Permite albergar números enteros. Su palabra reservada es "int". A continuación un ejemplo de uso:
+  ```
+  int_var = 10
+  print(type(int_var).__name__)
+  >>int
+  ```
+
+- float: Permite albergar números decimales con gran extensión y precisión. Su palabra reservada es "float". A continuación un ejemplo de uso:
   ```
   # Asignamos un valor decimal
-  x = 3.14
-  print(type(x).__name__)
+  float_var = 3.14
+  print(type(float_var).__name__)
   >> float
 
   # AHora pasamos de int a float
 
   x = 4
-  print(type(x).__name__)
+  print(type(float_var).__name__)
   >> int
 
   x = float(4)
-  print(type(x).__name__)
+  print(type(float_var).__name__)
   >> float
 
   # Podemos almacenar decimales con alta presición
   x = 0.123412
-  print(x)
+  print(float_var)
   >> 0.123412
   ```
 
-- str: Permite albergar cadenas de texto, permitiendo acceder a cada uno de sus caracteres de forma independiente.
+- string: Permite albergar cadenas de texto, permitiendo acceder a cada uno de sus caracteres de forma independiente. Su palabra reservada es "str". A continuación un ejemplo de uso:
   ```
   string_var = 'hola'
   # Imprimimos toda la cadena
@@ -71,7 +78,21 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
   >>ho
   ```
 
-- bool: Permite guardar variables booleanas, como True o False.
+- boolean: Permite guardar variables booleanas, como True o False. Este tipo de variables son impresendibles para  verificar tipos de entrada, validaciones de declaraciones lógicas, entre otras funciones imprecindibles. Tiene principalmente dos valore: "True" y "False", las cuales traducen literalmente "Verdadero" y "Falso". La palabra reservada para este tipo de variable es "bool". A continuación un ejemplo de uso:
+```
+# Verdadero 
+bool_var = True
+print(type(bool_var).__name__)
+>>bool
+
+# Falso
+bool_var = False
+print(type(bool_var).__name__)
+
+```
+
+
+
 
 - complex: Permite albergar números complejos.
   
@@ -166,8 +187,7 @@ False	 and 	False 	= 	False
 
 ## Constantes
 
-Las constantes son un tipo de dato que no modificaremos en la ejecución de nuestro programa
-Se suele asigrnar a direcciones o rutas especificas, numeros constantes que seguiremos usando, como porcentajes.
+Las constantes son un tipo de dato que no modificaremos en la ejecución de nuestro programa. Se suele asigrnar a direcciones o rutas especificas, numeros constantes que seguiremos usando. Este tipo de notación se hace por convención, dado a que python no tiene una palabra clave o reservada para definir esto.
 
 Las declaramos en mayusculas en su totalidad:
 ```
