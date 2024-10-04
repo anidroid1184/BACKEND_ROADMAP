@@ -34,14 +34,47 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 
 - float: Permite albergar números decimales con gran extensión y precisión.
   ```
+  # Asignamos un valor decimal
   x = 3.14
+  print(type(x).__name__)
+  >> float
+
+  # AHora pasamos de int a float
+
+  x = 4
+  print(type(x).__name__)
+  >> int
+
+  x = float(4)
+  print(type(x).__name__)
+  >> float
+
+  # Podemos almacenar decimales con alta presición
+  x = 0.123412
+  print(x)
+  >> 0.123412
   ```
 
-- str: Permite albergar cadenas de texto.
+- str: Permite albergar cadenas de texto, permitiendo acceder a cada uno de sus caracteres de forma independiente.
+  ```
+  string_var = 'hola'
+  # Imprimimos toda la cadena
+  print(string_var)
+  >>hola
+
+  # Imprimimos un caracter especifico de la cadena
+  print(string_var[0])
+  >>h
+
+  # Imprimimos un rango de la cadena
+  print(string_var[0:1)
+  >>ho
+  ```
 
 - bool: Permite guardar variables booleanas, como True o False.
 
 - complex: Permite albergar números complejos.
+  
 
 
 
@@ -57,7 +90,9 @@ Un ejemplo de lenguajes donde esto sucede es en Python.
 
 Ahora, la forma en la que damos instrucciones se llaman declaraciones, estas declaraciones pueden ser de varios tipos, de hecho muchos. Vamos a ver algunas de estas:
 
-Declaración de variables:
+
+
+##  Declaración de variables:
 
 Tenemos dos formas principales, declarar la variable solamente con su valor, como:
 ```
@@ -76,6 +111,12 @@ x = int(10)
 y = bool(True)
 string = str("Hello, world!")
 ```
+## Fundición de tipos
+
+### Fundición implicita
+
+### Fundición explicita
+
 
 ## Operadores aritméticos:
 
