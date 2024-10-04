@@ -7,11 +7,14 @@ En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿
 Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
 Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
 ```
-# Declaramos una variable, en este caso sera tipo entero, osea, tipo int
+#  Ejemplo de declaración de variable tipo entero(int)
+
 x = 1
 # Verificamos el tipo de variable
 print(type(x).__name__)
 >>'int'
+
+# Ejemplo de declaración tipo string
 
 # Asignamos un tipo diferente  a la variable
 x = str(x)
@@ -24,6 +27,8 @@ En este caso definimos una variable tipo int, los int son variables que contiene
 
 Si queremos llamarla vamos a tener que hacer referencia a ella como "x", dado a que es la forma en que la invocamos. Si queremos imprimirla en pantalla(terminal) podemos hacerlo a Trávez de la función "print":
 ```
+# Ejemplo de uso de la función para imprimir en pantalla(print)
+
 print(x)
 >>1
 ```
@@ -34,6 +39,8 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 
 - int: Permite albergar números enteros. Su palabra reservada es "int". A continuación un ejemplo de uso:
   ```
+  # Ejemplo de declaración de variable tipo int
+  
   int_var = 10
   print(type(int_var).__name__)
   >>int
@@ -41,6 +48,8 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 
 - float: Permite albergar números decimales con gran extensión y precisión. Su palabra reservada es "float". A continuación un ejemplo de uso:
   ```
+  # Ejemplo de declaración de variable tipo float
+  
   # Asignamos un valor decimal
   float_var = 3.14
   print(type(float_var).__name__)
@@ -64,6 +73,8 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 
 - string: Permite albergar cadenas de texto, permitiendo acceder a cada uno de sus caracteres de forma independiente. Su palabra reservada es "str". A continuación un ejemplo de uso:
   ```
+  # Ejemplo de declaración de variable tipo string
+  
   string_var = 'hola'
   # Imprimimos toda la cadena
   print(string_var)
@@ -80,6 +91,7 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 
 - boolean: Permite guardar variables booleanas, como True o False. Este tipo de variables son impresendibles para  verificar tipos de entrada, validaciones de declaraciones lógicas, entre otras funciones imprecindibles. Tiene principalmente dos valore: "True" y "False", las cuales traducen literalmente "Verdadero" y "Falso". La palabra reservada para este tipo de variable es "bool". A continuación un ejemplo de uso:
 ```
+# Ejemplo de declaración de variable tipo bool
 # Verdadero 
 bool_var = True
 print(type(bool_var).__name__)
@@ -94,24 +106,50 @@ print(type(bool_var).__name__)
 
 
 
-- complex: Permite albergar números complejos.
+- complejos: Permite albergar números complejos, estos se definen usando j. Su tipo de variable es "complex", igual que su variable reservada. Y permite varias operaciones con números complejos. A continuación ejemplos de uso:
+
+```
+# Ejemplo de declaración de variable tipo complex
+
+
+z1 = 4 +5j
+print(type(z1).__name__)
+>> complex
+
+# operaciones con números complejos
+
+z2 = 3 + 4j
+
+print(z1+z2)
+print(z1-z2)
+print(z1*z2)
+print(z1/z2)
+>> 7 + 9j
+>> 1 + 9j
+>> -8 + 31j
+>> 1.28 - 0.04j
+
+# Podemos extraer también su parte real e imaginaria
+
+z3 = z1 +z2
+
+print(z3.real)
+print(z3.imag)
+>> 7
+>> 9
+
+
+```
   
+# Tipado Dinamico en python
 
+Python es un lenguaje el cual tiene tipado dinámico, no estático. El tipado es una característica de los lenguaje de programación, se centra en la forma de declarar el tipo de variables.
 
+El tipado estático es en donde el tipo está ligado a la variable, por lo mismo, normalmente al momento de declarar una variable debemos incluir explícitamente que tipo será. Un ejemplo de lenguajes en los cuales pasa esto es en c++ o golang
 
+El tipado Dinámico es en donde el tipo está ligado a el dato, por lo mismo, una variable antes definida con un tipo de dato puede tomar otro tipo de dato diferente. Un ejemplo de lenguajes donde esto sucede es en Python.
 
-Entre otros tipos de datos, estos son los esenciales. Python es un lenguaje el cual tiene tipado dinámico, no estático.
-El tipado es una característica de los lenguaje de programación, se centra en la forma de declarar el tipo de variables.
-
-El tipado estático es en donde el tipo está ligado a la variable, por lo mismo, normalmente al momento de declarar una variable debemos incluir explícitamente que tipo será.
-Un ejemplo de lenguajes en los cuales pasa esto es en c++ o golang
-
-El tipado Dinámico es en donde el tipo está ligado a el dato, por lo mismo, una variable antes definida con un tipo de dato puede tomar otro tipo de dato diferente.
-Un ejemplo de lenguajes donde esto sucede es en Python.
-
-Ahora, la forma en la que damos instrucciones se llaman declaraciones, estas declaraciones pueden ser de varios tipos, de hecho muchos. Vamos a ver algunas de estas:
-
-
+Ahora, la forma en la que damos instrucciones se llaman declaraciones, las hemos estado usando al momento de definir variables o imprimir en pantalla. Estas declaraciones pueden ser de varios tipos, de hecho muchos. Vamos a ver algunas de estas:
 
 ##  Declaración de variables:
 
