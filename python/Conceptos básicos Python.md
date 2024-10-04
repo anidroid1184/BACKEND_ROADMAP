@@ -5,33 +5,46 @@ Python es un lenguaje en el cual todo los datos son tomados como objetos, esto h
 En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿Qué son las variables?
 
 Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
-Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Ejemplo:
+Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
 ```
+# Declaramos una variable, en este caso sera tipo entero, osea, tipo int
 x = 1
-```
-En este caso definimos una variable tipo int, los int son variables que contienen exclusivamente números enteros.
+# Verificamos el tipo de variable
+print(type(x).__name__)
+>>'int'
 
-Si queremos llamarla vamos a tener que hacer referencia a ella como "x", dado a que es la forma en que la invocamos. SI queremos imprimirla en pantalla(terminal) podemos hacerlo a Trávez de la función "print":
+# Asignamos un tipo diferente  a la variable
+x = str(x)
+# Verificamos el tipo
+print(type(x).__name__)
+>>'str'
+```
+
+En este caso definimos una variable tipo int, los int son variables que contienen exclusivamente números enteros. Luego, reasignamos el tipo de variable, ahora es string, una variable tipo cadena la cual es un arreglo de caracteres a los cuales podemos acceder de manera independiente. En breve veremos que es una lista.
+
+Si queremos llamarla vamos a tener que hacer referencia a ella como "x", dado a que es la forma en que la invocamos. Si queremos imprimirla en pantalla(terminal) podemos hacerlo a Trávez de la función "print":
 ```
 print(x)
 >>1
 ```
 
-Como podemos observar al asignarle un valor a una letra cualquiera, la convertimos en una variable la cual tiene un valor especifico.
+"print" es una funcion integrada de python, es una palabra reservada, por lo mismo no podremos usarla para definir variables. Como podemos observar al asignarle un valor a una letra cualquiera, la convertimos en una variable la cual tiene un valor especifico.
 
-Pero, ¿Qué otros tipos de variables hay?
+Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros) y "str"(string), más sin embargo también tenemos otros varios tipos:
 
-Tenemos varios tipos, cuales cumplen funciones diferentes:
+- float: Permite albergar números decimales con gran extensión y precisión.
+  ```
+  x = 3.14
+  ```
 
-````
-float: Permite albergar números decimales con gran extensión y precisión.
+- str: Permite albergar cadenas de texto.
 
-str: Permite albergar cadenas de texto.
+- bool: Permite guardar variables booleanas, como True o False.
 
-bool: Permite guardar variables booleanas, como True o False.
+- complex: Permite albergar números complejos.
 
-complex: Permite albergar números complejos.
-````
+
+
 
 Entre otros tipos de datos, estos son los esenciales. Python es un lenguaje el cual tiene tipado dinámico, no estático.
 El tipado es una característica de los lenguaje de programación, se centra en la forma de declarar el tipo de variables.
