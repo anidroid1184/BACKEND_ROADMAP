@@ -112,8 +112,41 @@ False	 and 	False 	= 	False
 
 ## Constantes
 
+Las constantes son un tipo de dato que no modificaremos en la ejecución de nuestro programa
+Se suele asigrnar a direcciones o rutas especificas, numeros constantes que seguiremos usando, como porcentajes.
+
+Las declaramos en mayusculas en su totalidad:
+```
+CONSTANT_VAR = 5
+```
+
+Las listas tambien pueden ser constantes, aunque normalemente se suelen usar tuplas en su lugar.
+
 ## Comentarios
 
+Los comentarios son una forma de "documentar" o proporcionar información sobre funciones de nuestro código, dentro del mismo.
+Se declaran con "#" para iniciar una linea o parte de ella, apartir de esto el compilador no prosesara ese fragmento de codigo.
+Python como tal no tiene forma de declarar bloques de código, pero aveces son reemplazados con estas dos opciones:
+
+```
+# Linea 1
+# Linea 2
+# LInea 3
+
+"""
+Linea 1
+LInea 2
+Linea 3
+"""
+
+'''
+Linea 1
+LInea 2
+Linea 3
+'''
+```
+Hay ciertar reglas opcionales que brindan una buena legebilidad a nuestro código, este conjunto de reglas se llaman el "PEP 8".
+Y puedes consultarlas en: [https://pep8.org/]
 ## Strings
 
 ## Formatear Strings
