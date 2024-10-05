@@ -265,6 +265,13 @@ Y puedes consultarlas en: https://pep8.org/
 
 ## Función Input
 
+## Listas, tuplas, sets y diccionarios
+
+### Listas
+### Tuplas
+### Sets
+### diccionarios
+
 ## Control de flujo (if-else)
 
 ## Switch(match)
