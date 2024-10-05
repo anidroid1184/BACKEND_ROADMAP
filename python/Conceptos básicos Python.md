@@ -151,7 +151,7 @@ El tipado Dinámico es en donde el tipo está ligado a el dato, por lo mismo, un
 
 Ahora, la forma en la que damos instrucciones se llaman declaraciones, las hemos estado usando al momento de definir variables o imprimir en pantalla. Estas declaraciones pueden ser de varios tipos, de hecho muchos. Vamos a ver algunas de estas:
 
-##  Declaración de variables:
+>- ##  Declaración de variables:
 
 Tenemos dos formas principales, declarar la variable solamente con su valor, como:
 ```
