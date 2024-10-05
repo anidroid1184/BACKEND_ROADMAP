@@ -266,6 +266,7 @@ Y puedes consultarlas en: https://pep8.org/
 ## Función Input
 
 ## Estructuras de datos en python
+### Niveles de ámbito en python
 
 ## Listas, tuplas, sets y diccionarios
 
