@@ -265,6 +265,8 @@ Y puedes consultarlas en: https://pep8.org/
 
 ## Función Input
 
+## Estructuras de datos en python
+
 ## Listas, tuplas, sets y diccionarios
 
 ### Listas
@@ -279,6 +281,8 @@ Y puedes consultarlas en: https://pep8.org/
 ## Ciclos
 
 ## Funciones
+### *args
+### **kwargs
 
 ## variables globales
 
