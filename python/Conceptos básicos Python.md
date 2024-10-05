@@ -1,11 +1,11 @@
-# Conceptos básicos Python
+> # Conceptos básicos Python
 
-Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
+>- Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
 
-En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿Qué son las variables?
+>- En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿Qué son las variables?
 
-Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
-Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
+>- Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
+>- Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
 ```
 #  Ejemplo de declaración de variable tipo entero(int)
 
