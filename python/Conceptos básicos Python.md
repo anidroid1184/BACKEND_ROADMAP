@@ -295,7 +295,6 @@ Y puedes consultarlas en: https://pep8.org/
 
 ## Paquetes
 
-## Manejo de errores
-
+## Manejo de errores (exepciones)
 
 
