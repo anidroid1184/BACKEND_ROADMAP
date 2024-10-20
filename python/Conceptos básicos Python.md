@@ -259,13 +259,50 @@ Linea 3
 ```
 Hay ciertar reglas opcionales que brindan una buena legebilidad a nuestro código, este conjunto de reglas se llaman el "PEP 8".
 Y puedes consultarlas en: https://pep8.org/
+
+
 ## Strings
+Los strings son cadenas o arreglos de caracteres. Por lo mismo, podemos acceder a cada uno de los caracteres de un string como si fuera un arreglo:
+```
+ejemplo_string = 'Hola soy un ejemplo'
+print(ejemplo_string[2])
+>>l
+```
+También como en los arreglos, podemos acceder a rango de letras:
+```
+ejemplo_string = 'Hola soy un ejemplo'
+print(ejemplo_string[2:6])
+>>la s
+```
+En los strings los espacios también son caracteres. Cuando establecemos un rango funcionara de la siguiente forma: [incio, final -1, paso], esto nos explica porque solo llegamos hasta s en el ejemplo anterior, ya que el paso final no se incluye a sí mismo. 
+El paso indica la cada cuantos caracteres contaremosm por ejemplo:
+```
+ejemplo_string = 'Hola soy un ejemplo'
+print(ejemplo_string[0:8:2])
+>>Hl o
+```
+Como podemos observar, se toman los caracteres cada dos pasos en el rango establecido.
 
 ## Formatear Strings
+El formatear strings es una forma de concatenar variables en nuestros strings...
 
 ## Función Input
 
+La función input es una función integrada en python, que nos permite que el usuario interactue con el script e ingrese valores a tráves de la terminal. Debemos tener en cuenta que los valores ingresados en la terminal serán strings, por lo que si queremos cambiar esto debemos hacer una fundición de tipo explicita (esto se explica más a fondo más adelante).
+```
+edad = input('Ingrese su edad')
+print(type(edad).__name__)
+>>str
+```
+Ejemplo con fundición de tipo explicita:
+```
+edad = int(input('Ingrese su edad'))
+print(type(edad).__name__)
+>>int
+```
+
 ## Estructuras de datos en python
+
 ### Niveles de ámbito en python
 
 ## Listas, tuplas, sets y diccionarios
@@ -296,5 +333,49 @@ Y puedes consultarlas en: https://pep8.org/
 ## Paquetes
 
 ## Manejo de errores (exepciones)
+
+En python, como en otros lenguajes, tenemos errores, dichos errores se conocen como excepciones. Estas excepciones son diversas y podemos tratar de depurarlas o "adelantarnos" a su posible aparición. Esto lo podemos manejar con las siguientes declaraciones:
+
+```
+def division(a, b):
+  try:
+      a / b
+  except:
+    print('Algo anda mal, revisa la operación')
+```
+En el anterior ejemplo vimos una función, la cual en caso tal de no funcionar, imprimimos en pantalla "Algo anda mal, revisa la operación". Esta es una forma de capturar excepciones, pero, podemos ser mucho más especificos, ejemplo es cuando tenemos una división por cero:
+```
+def division(a, b):
+  try:
+      a / b
+  except ZeroDivisionError as e:
+    print(f'Algo anda mal, {e}')
+```
+El anterior ejemplo nos permite capturar un error especifico, que es qque en caso de dividir por 0, imprimira en pantalla "Algo anda mal, ZeroDivisionError", indicandole al usuario el error que está cometiendo, permitiendo que lo corrija más facilmente.
+
+También podemos encadenar erorres, en caso de que un error previsto no suceda, sino otro.
+```
+def division(a, b):
+  try:
+      a / b
+  except ZeroDivisionError as e:
+    print(f'Algo anda mal, {e}')
+  except Exception as e:
+    print(f'Algo anda mal, {e}')
+```
+En este ejemplo nos mostrar el error que estamos teniendo, independientemenete si es una división entre cero o no. Además, podemos incluir al final la sentencia else para indicar que queremos hacer en caso de no haber excepciones:
+```
+def division(a, b):
+  try:
+      a / b
+  except ZeroDivisionError as e:
+    print(f'Algo anda mal, {e}')
+  except Exception as e:
+    print(f'Algo anda mal, {e}')
+  else:
+    return a/b
+```
+Aveces está sentencía es innecesaria ya que try cumple la misma función, pero aveces puede ser util, en diversas situaciones.
+
 
 
