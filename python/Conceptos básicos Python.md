@@ -308,6 +308,8 @@ print(type(edad).__name__)
 ## Listas, tuplas, sets y diccionarios
 
 ### Listas
+split
+join
 ### Tuplas
 ### Sets
 ### diccionarios
@@ -379,10 +381,12 @@ Aveces está sentencía es innecesaria ya que try cumple la misma función, pero
 
 ## Manejo de archivos
 
-r
-r+
-a
-w
+Con open la forma predeterminada de abrir el archivo es read(r) o leer
+Añadir close() al final
+>- r
+>- r+
+>- a -  append
+>- w -  write
 
 rb
 rb+
@@ -390,3 +394,50 @@ ab
 wb
 
 archivo = open(file=direccción, mode=a)
+
+### Creación de archivos
+
+with open('file.txt', 'w') as file:
+  file.write('Hola soy un nuevo archivo')
+
+with open('file.txt' ,'a') as file:
+  file.writelines(['\nSoy nueva linea 1', '\nSoy nueva linea 2'])
+
+try:
+
+except FileNotfoundError:
+
+### Lectura de archivos
+
+Cambiar a archivo el file, añadir ejemplos de todos los read
+
+read()  --> lee todo el archivo, con un argumetno imprime hasta el numero de caracteres especificado 
+read(44) imprime hasta ese caracter
+readline() --> puede pasar argumento para leer caracteres
+readlines() --> retorna lista de cadenas, puede añadirse a una variable y poder iterar en el
+
+with open('file.txt', 'r') as file:
+  data = file.readlines()
+
+  for linea in data:
+    print(linea)
+
+Se puede hacer de forma abreviada, cuando se abre como read, este retornara el archivo como lista por defecto, permitiendonos:
+
+with open('file.txt', 'r') as file:
+  for linea in file:
+    print(linea)
+  file.close()
+
+#### Ruta absoluta
+incluye directorio C
+#### Ruta relativa
+Relativa al directorio actual
+
+./sample.txt
+
+
+variable igual a archivo 
+
+f = open('sample.txt', 'r')
+f.close()
