@@ -377,5 +377,16 @@ def division(a, b):
 ```
 Aveces está sentencía es innecesaria ya que try cumple la misma función, pero aveces puede ser util, en diversas situaciones.
 
+## Manejo de archivos
 
+r
+r+
+a
+w
 
+rb
+rb+
+ab
+wb
+
+archivo = open(file=direccción, mode=a)
