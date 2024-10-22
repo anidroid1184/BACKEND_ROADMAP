@@ -1,11 +1,9 @@
 > # Conceptos básicos Python
 
->- Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
-
->- En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿Qué son las variables?
-
->- Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
->- Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
+Python es un lenguaje en el cual todo los datos son tomados como objetos, esto hace que tengan atributos y métodos a los cuales podemos acceder. Esto se abordara con más detalle a futuro.
+En python podemos realizar nuestro proyectos haciendo uso de variables, pero, ¿Qué son las variables?
+Las variables son un espacio reservado de memoria. Nos sirven para realizar operaciones entre ellas, interactuar con sistemas, validar operaciones, entre muchas otra funciones.
+Podemos concebirlas como un baúl, el cual tiene un nombre, el modo de acceder a lo que hay dentro del baúl es usando ese nombre. Python tiene tipado dinamico, aspecto que veremos más a fondo en breve, por el momento solo debes de saber que una variable puede cambiar de tipo constantemetne y el compilador lo asignara automaticamente. Ejemplo:
 ```
 #  Ejemplo de declaración de variable tipo entero(int)
 
@@ -92,6 +90,7 @@ Pero, ¿Qué otros tipos de variables hay?. Hemos visto dos tipos "int"(enteros)
 - boolean: Permite guardar variables booleanas, como True o False. Este tipo de variables son impresendibles para  verificar tipos de entrada, validaciones de declaraciones lógicas, entre otras funciones imprecindibles. Tiene principalmente dos valore: "True" y "False", las cuales traducen literalmente "Verdadero" y "Falso". La palabra reservada para este tipo de variable es "bool". A continuación un ejemplo de uso:
 ```
 # Ejemplo de declaración de variable tipo bool
+
 # Verdadero 
 bool_var = True
 print(type(bool_var).__name__)
@@ -102,15 +101,13 @@ bool_var = False
 print(type(bool_var).__name__)
 
 ```
-
-
-
-
 - complejos: Permite albergar números complejos, estos se definen usando j. Su tipo de variable es "complex", igual que su variable reservada. Y permite varias operaciones con números complejos. A continuación ejemplos de uso:
 
 ```
-# Ejemplo de declaración de variable tipo complex
+# Ejemplo de operaciones con variables tipo complex
 
+
+# Ejemplo de declaración de variable tipo complex
 
 z1 = 4 +5j
 print(type(z1).__name__)
@@ -155,7 +152,7 @@ Ahora, la forma en la que damos instrucciones se llaman declaraciones, las hemos
 
 Tenemos dos formas principales, declarar la variable solamente con su valor, como:
 ```
-python
+# Ejemplo de declaración de variable
 x = 10
 y = True
 string = "Hello, world!"
@@ -165,17 +162,63 @@ Cuando usamos funciones como: int(), float(), str()
 Al momento de declarar una variables, estamos dando un tipado a esas variables, estos tipados consumen tiempo para ser procesados, por lo cual es recomendar asignar valores directamente y tipar las variables cuando es estrictamente necesario.
 
 ```
-python
+# Ejemplo de asignación de tipo
+
 x = int(10)
 y = bool(True)
 string = str("Hello, world!")
 ```
 ## Fundición de tipos
 
+Cuando declaramos una variable en python, esta normalmente se le declara con un tipo, ya sea explicitamente o implicitamente:
+
+```
+# Ejemplo de declaración explicita e implicita
+
+# declaración de tipo explicita
+num = int(5)
+
+# declaración de tipo implicita
+num = 5
+```
+Como notamos en los dos ejemplos, cuando hacemos un declaración explicita, asignamos un tipo de variable usando las funciones integradas de python. Sin embargo, podemos usar esta caracteristica para redeclarar el tipo de una variable. Un ejemplo es cuando tenemos una entrada númerica de el usuario, esta entrada es un string por defecto, por lo que si queremos usarla para realizar calculos matemáticos no podremos hacerlo.
+Para esto usaremos la función de tipos:
+```
+# Ejemplo de fundición
+
+num = input('Ingrese un número')
+print(type(num).__name__)
+>> str
+
+num = int(input('Ingrese un número'))
+print(type(num).__name__)
+>> int
+```
+Ahora, tenemos dos tipos de funciones de tipo.
 ### Fundición implicita
+Se presenta cuando una variable toma un valor ya existente, esta tomara automaticamente el tipo que tenga la variable. Esta es una caracteristica de python, resulta util porque nos evita tener que declarar cada cambio, más sin embargo, no nos permite tener control de cuando suceden estas. Un ejemplo es:
+
+```
+# Ejemplo de fundición implicita
+
+# Variable tipo int
+num = 5
+# Variable con tipo de la variable num
+nuevo_num = num
+
+print(type(num).__name__, type(nuevo_num).__name__)
+>> int, int
+```
 
 ### Fundición explicita
+Se presenta cuando a tráves de las funciones integradas de python, forzamos el cambio o la fundición de tipo. Un ejemplo sería:
+```
+# Ejemplo de fundición explicita
 
+num = float(input('Digite el valor de una libra de arroz')
+print(type(num).__name__)
+>> float
+```
 
 ## Operadores aritméticos:
 
