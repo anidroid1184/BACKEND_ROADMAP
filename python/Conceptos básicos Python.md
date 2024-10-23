@@ -345,6 +345,12 @@ print(type(edad).__name__)
 ```
 
 ## Estructuras de datos en python
+scoping
+Es un concepto en python el cual nos permite tener más control sobre los elemento de nuestro código. Podemos verlo como una especie de encapsulamiento. El scoping nos permite declarar cuatro tipos de variables que tendrán un nivel de alcance diferente, las cuales son:
+>- ### Local
+>- ### Global
+>- ### Encerrado (enclosing)
+>- ### Incorporado (buil-in)
 
 ### Niveles de ámbito en python
 
