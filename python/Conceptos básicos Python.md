@@ -347,10 +347,92 @@ print(type(edad).__name__)
 ## Estructuras de datos en python
 scoping
 Es un concepto en python el cual nos permite tener más control sobre los elemento de nuestro código. Podemos verlo como una especie de encapsulamiento. El scoping nos permite declarar cuatro tipos de variables que tendrán un nivel de alcance diferente, las cuales son:
+
 >- ### Local
->- ### Global
+Cuando hablamos de elementos con alcance local, nos referimos usualmente a variables que están definidas dentro de una función, estas variables son accesibles exclusivamente dentro de la función, no se pueden llamar desde afuera.
+Un ejemplo de este tipo de alcance es el siguiente:
+```
+# Ejemplo variable con alcance local
+
+def funcion_local():
+  variable_local = 'soy local'
+  print(f'Dentro de la función {variable_local}')
+
+print(f'Fuera de la función {variable_local}')
+
+>> Dentro de la función soy local
+>> UnboundLocalError
+```
+
 >- ### Encerrado (enclosing)
+El alcance "enclosing" o encerrado, es similar a el alcance local, solo que funciona para funciones anidadas, en el cual la función que está anidada dentro de otra
+tiene acceso a los elementos fuera de ella, sin embargo, la función externa no tiene acceso a los elementos de la función interna. 
+Un ejemplo de este tipo de alcance es el siguiente:
+
+```
+# Ejemplo variable con alcance local
+
+
+# Ejemplo con error
+
+def funcion_externa():
+  variable_externa = 'soy externa'
+  print(f'Funcion externa {variable_externa, variable_interna}')
+  def funcion_interna():
+      variable_interna = 'son interna'
+      print(f'Funcion interna {variable_externa}, {variable interna}')
+>> NameError: name 'variable_interna' is not defined
+
+
+# Ejemplo sin error
+
+def funcion_externa():
+  variable_externa = 'soy externa'
+  def funcion_interna():
+      variable_interna = 'soy interna¿
+      print(f'Funcion interna {variable_externa}, {variable interna}')
+>>Función interna soy externa, soy interna
+```
+
+>- ### Global
+El alcance global es el máximo nivel de alcance de un elemento en python, estos elementos son perfectamente accesibles desde una función normal o anidada. Están al nivel del código principal del modulo.
+Un ejemplo es este tipo de alcance es:
+
+```
+# Ejemplo de alcance local
+
+variable_global = 'soy global'
+
+def funcion():
+  print(variable_global)
+  def funcion_anidada():
+    print(variable_global)
+
+>> soy global
+>> soy global
+```
+
+En python tenemos una forma de llevar una variable con alcance local o encerrado, a tener un alcance global. Para ello usamos la sentencia "global" y luego llamando a la función para definir las variables internas como globales.
+Un ejemplo de esto es:
+```
+# Ejemplo de conversión de alcance
+
+def funcion():
+  global variable_local
+  variable_local = 'soy local'
+  def funcion_anidada():
+    global variable_anidada
+    variable_anidada = 'soy anidada'
+  funcion_anidada()  # se llama a la funcion para poder definir las variables locales
+funcion()
+
+print(variable_local)
+print(variable_anidada)
+>> soy local
+>> soy anidada
+```
 >- ### Incorporado (buil-in)
+Son funciones incorporadas en python, tales como len(), range(), str(). Por lo mismo son accesibles desde cualquier elemento del código.
 
 ### Niveles de ámbito en python
 
