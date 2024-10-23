@@ -502,13 +502,13 @@ def read_file(file_name):
         string: contents of the given file.
     """
     ### WRITE SOLUTION HERE
-    lines = []
     try:
-        file = open(file_name, mode='r')
+        file = open(file_name, 'r')
     except FileNotFoundError as e:
         print(e)
-    print(file.read())
-    return file.read()
+    content = file.read()
+    print(content)
+    return content
 
 
 def read_file_into_list(file_name):
@@ -580,8 +580,7 @@ def read_even_numbered_lines(file_name):
     ### WRITE SOLUTION HERE
     even_numbered = []
     try:
-        file_content = open(file_name).read()
-        file_content = file_content.split('\n')
+        file_content = open(file_name).readlines()
     except FileNotFoundError as e:
         print(e)
     except Exception as e:
@@ -625,10 +624,10 @@ Feel free to uncomment/modify/add to them as you wish.
 def main():
 
     file_contents = read_file("sampletext.txt")
-    print(read_file_into_list("sampletext.txt"))
-    write_first_line_to_file(file_contents, "online.txt")
-    print(read_even_numbered_lines("sampletext.txt"))
-    print(read_file_in_reverse("sampletext.txt"))
+    #print(read_file_into_list("sampletext.txt"))
+    #write_first_line_to_file(file_contents, "online.txt")
+    #print(read_even_numbered_lines("sampletext.txt"))
+    #print(read_file_in_reverse("sampletext.txt"))
 
 if __name__ == "__main__":
     main()
