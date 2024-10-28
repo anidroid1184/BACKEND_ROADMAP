@@ -344,8 +344,8 @@ print(type(edad).__name__)
 >>int
 ```
 
-## Estructuras de datos en python
-scoping
+
+## Scoping
 Es un concepto en python el cual nos permite tener más control sobre los elemento de nuestro código. Podemos verlo como una especie de encapsulamiento. El scoping nos permite declarar cuatro tipos de variables que tendrán un nivel de alcance diferente, las cuales son:
 
 >- ### Local
@@ -436,9 +436,57 @@ Son funciones incorporadas en python, tales como len(), range(), str(). Por lo m
 
 ### Niveles de ámbito en python
 
-## Listas, tuplas, sets y diccionarios
+## Estructuras de datos en python
+Existen dos tipos de estructuras de datos en python, las primitivas y no primitivas. En este post veremos las no-primitivas. Las estructuras de datos nos permite almacenar datos de forma ordenada, usualmente son conocidos como arrays, pueden verse de cierta forma como una matriz unidemensional.
+Hay estructuras de datos que son mutables e inmutables, las mutables en python son las listas, diccionarios y sets(aunque los sets no tienen orden perso son mutables).
+En estructuras de datos no-primitivas inmutables tenemos las tuplas.
+
+A continuación veremos en detalle cada estructura de datos no primitiva:
 
 ### Listas
+
+Conocidas en otros lenguajes como "arrays", estas nos permiten tener un conjunto de elementos en una sola variable. Estos elementos se encuentran ordenados por indice el cual se usa para acceder a cada elemento individualmente. Además, podemos acceder a estos elementos por rangos, generando sublistas las cuales también permiten acceder a sus elementos de forma independiente.
+
+En las listas los indices comienzan desde 0, por lo que para acceder a el primer elemento de nuestra lista, debemos de buscar la posición 0.
+Para declarar las listas tenemos dos opciones:
+
+```
+# Ejemplo: declaración de lista usando []
+
+# declaración de lista vacia
+ejemplo_lista = []
+
+# declaración de lista con elementos
+ejemplo_lista_2 = [1, 2, 3]
+
+# Ejemplo: acceder a elementos con lista
+
+# acceder a un elemento
+print(ejemplo_lista_2[1])
+>> 2
+
+```
+Como notamos en el ejemplo, podemos declarar listas vacias, las cuales usaremos luego. Ahora, existe otra forma de declarar listas, usando la función integrada de python:
+
+```
+# Ejemplo de declaración de lista usando list()
+
+# declaración de lista vacia
+ejemplo_lista = list()
+
+# declaración de lista con elementos
+ejemplo_lista_2 = list(1, 2, 3)
+
+# Ejemplo: acceder a elementos con lista
+
+# acceder a un elemento, se accede de igual forma que si se declara de otra forma
+print(ejemplo_lista_2[1])
+>> 2
+```
+#### Manejo de listas
+En python podemos usar las listas de muchas formas para añadir, modificar y eliminar elementos de las listas que definamos, ahora veremos varias formas y metodos integrados que podemos usar al momento de manipular listas:
+
+
 split
 join
 ### Tuplas
