@@ -48,3 +48,17 @@ Uso de unittest y pytest
 Documentación y Comentarios
 Estilo de documentación (docstrings)
 Mejores prácticas para comentarios
+
+## Programación funcional
+### Funciones puras (pure functions)
+### Funcion map:
+En una estructura de datos iterable(como las listas), aplicara un metodo que especifiquemos, ejemplo, si queremos reversar strings de una lista, la usariamos así
+
+```
+list_coffes = ['capucchino', 'latte', 'with milk']
+def reverseString(str):
+  return str[::-1]
+
+list_reverse = list(map(reverString, list_coffes))
+
+```
