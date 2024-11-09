@@ -97,10 +97,12 @@ En una estructura de datos iterable(como las listas), aplicara un metodo que esp
 list_coffes = ['capucchino', 'latte', 'with milk']
 def reverseString(str):
   return str[::-1]
+list_reverse = list(map(reverString, list_coffes))
 ```
 ## Recursividad
 Una funcion se llama a si mismo, el objetivo es dividir una tarea en subtareas menos complejas.
+### Reverse string with recursion
 
-list_reverse = list(map(reverString, list_coffes))
+## map y filtrar
 
 ```
