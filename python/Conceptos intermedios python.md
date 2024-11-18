@@ -146,3 +146,52 @@ Ejecuta una funcion a todos los elementos de un iterable, sin importar las confi
 ### filter
 aplica una función a todos los elementos y solo retornara los elementos que cumplan una condicion de la funcion.
 ```
+
+```
+https://www.knowledgehut.com/blog/programming/python-map-list-comprehension
+https://realpython.com/python-recursion/
+https://stackabuse.com/functional-programming-in-python/
+
+
+Paradigma de programación orientada a objetos (OOP)
+Conceptos clave de OOP:
+Clases
+Objetos
+Métodos
+Cuatro conceptos fundamentales de OOP:
+Herencia
+Polimorfismo
+Encapsulación
+Abstracción
+
+modificadores de acceso representados por palabras clave como public, private y protected.
+
+class Alpha:
+
+def __init__(self):
+    self._a = 2.  # Protected member ‘a’
+    self.__b = 2.  # Private member ‘b’
+
+ Debe tenerse en cuenta que todavía se puede acceder a estos miembros privados y protegidos desde fuera de la clase utilizando métodos públicos para acceder a ellos o mediante una práctica conocida como name mangling. El name mangling es el uso de dos guiones bajos iniciales y un guión bajo final, por ejemplo:
+
+_class__identifier 
+
+Clase es el nombre de la clase e identificador es el miembro de datos al que quiero acceder.
+
+# Herencia
+class Parent:
+    Members of the parent class
+
+class Child(Parent):
+    Inherited members from parent class
+    Additional members of the child class
+
+A medida que la estructura de la herencia se complica, Python se adhiere a algo llamado Orden de Resolución de Métodos (MRO) que determina el flujo de ejecución. MRO es un conjunto de reglas, o un algoritmo, que Python utiliza para implementar la monotonicidad, que se refiere al orden o secuencia en la que el intérprete buscará las variables y funciones a implementar. Esto también ayuda a determinar el ámbito de los diferentes miembros de la clase dada.
+
+# Abstracción 
+Abstracción
+La abstracción puede verse tanto como un medio para ocultar información importante como información innecesaria en un bloque de código. El núcleo de la abstracción en Python es la implementación de algo llamado clases y métodos abstractos, que pueden implementarse heredando de algo llamado módulo abc. "abc" aquí significa clase base abstracta. Primero se importa y luego se utiliza como clase padre para alguna clase que se convierte en clase abstracta. Su implementación más sencilla puede hacerse como se indica a continuación.
+
+from abc import ABC,   
+class ClassName(ABC):
+    pass
