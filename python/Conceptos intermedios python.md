@@ -129,6 +129,17 @@ list_reverse = list(map(reverString, list_coffes))
 Una funcion se llama a si mismo, el objetivo es dividir una tarea en subtareas menos complejas.
 ### Reverse string with recursion
 
+Paradigma de programación orientada a objetos (OOP)
+Conceptos clave de OOP:
+Clases
+Objetos
+Métodos
+Cuatro conceptos fundamentales de OOP:
+Herencia
+Polimorfismo
+Encapsulación
+Abstracción
+
 ## map y filtrar
 ### map
 Ejecuta una funcion a todos los elementos de un iterable, sin importar las conficiones internas
