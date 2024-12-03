@@ -195,3 +195,9 @@ La abstracción puede verse tanto como un medio para ocultar información import
 from abc import ABC,   
 class ClassName(ABC):
     pass
+
+Creación de clases en Python
+
+Se comienza creando un archivo y una clase, donde se definen variables y métodos que se pueden reutilizar en diferentes instancias.
+Se utilizan dos métodos especiales: __new__ para crear un nuevo objeto vacío y __init__ para inicializar el objeto con valores específicos.
+Instanciación y uso de métodos
