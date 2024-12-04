@@ -285,3 +285,5 @@ apple = FruitFlavour()
 >>
 >>Fruit type:  Apple
 >>Apple is sweet
+
+# clases abstractas
