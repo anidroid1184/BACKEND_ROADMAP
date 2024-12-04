@@ -201,3 +201,87 @@ Creación de clases en Python
 Se comienza creando un archivo y una clase, donde se definen variables y métodos que se pueden reutilizar en diferentes instancias.
 Se utilizan dos métodos especiales: __new__ para crear un nuevo objeto vacío y __init__ para inicializar el objeto con valores específicos.
 Instanciación y uso de métodos
+
+# Herencia
+# Clase padre
+class Employees:
+    def __init__(self, name, last):
+        self.name = name
+        self.last = last
+
+# Clase hija que extiende la clase Employees
+class Supervisors(Employees):
+    def __init__(self, name, last, password):
+        super().__init__(name, last)  # Llama al constructor de la clase padre
+        self.password = password
+
+# Otra clase hija que extiende la clase Employees
+class Chefs(Employees):
+    def leave_request(self, days):
+        return f"May I take a leave for {days} days?"
+
+# Creando instancias de las clases
+adrian = Supervisors("Adrian", "A", "apple")
+emily = Chefs("Emily", "E")
+juno = Chefs("Juno", "J")
+
+# Usando los métodos y variables
+print(emily.leave_request(3))  # Solicita 3 días de permiso
+print(adrian.password)           # Imprime la contraseña de Adrian
+print(emily.name)               # Imprime el nombre de Emily
+
+# Herencia multiple
+# Example 1
+class A:
+   a = 1
+   
+class B:
+   b = 2
+   
+class C(A, B):
+   pass
+
+c = C()
+print(c.a, c.b)
+
+# Prioridad de herencia
+class A:
+   a = 1
+
+class B(A):
+   a = 2
+
+class C(B):
+   pass
+
+c = C()
+print(c.a)
+>> 2
+
+# metodos utiles
+issubclass(class A, class B)
+Class A:
+	pass
+Class B(A):
+	pass
+
+b = B()
+print(isinstance(b,B))
+print(isinstance(b,B))
+
+# ejemplo __super__
+class Fruit():
+    def __init__(self, fruit):
+        print('Fruit type: ', fruit)
+
+
+class FruitFlavour(Fruit):
+    def __init__(self):
+        super().__init__('Apple')
+        print('Apple is sweet')
+
+apple = FruitFlavour()
+
+>>
+>>Fruit type:  Apple
+>>Apple is sweet
