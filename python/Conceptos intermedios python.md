@@ -305,3 +305,13 @@ class Perro(Animal):
 class Gato(Animal):
     def hacer_sonido(self):
         return "Miau"
+
+Class abstract
+decoradores
+
+Tipos de herencia: directa, multinivel, multiple ..., herencia hibrida
+
+MRO - method resolution order
+![image](https://github.com/user-attachments/assets/540497a4-3960-4365-9fce-25345c696202)
+https://www.python.org/download/releases/2.3/mro/
+https://realpython.com/python3-object-oriented-programming/
