@@ -314,3 +314,7 @@ Tipos de herencia: directa, multinivel, multiple ..., herencia hibrida
 MRO - method resolution order
 https://www.python.org/download/releases/2.3/mro/
 https://realpython.com/python3-object-oriented-programming/
+
+
+import y reload
+
