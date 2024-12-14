@@ -318,3 +318,14 @@ https://realpython.com/python3-object-oriented-programming/
 
 import y reload
 
+Modulos, paquetes y bibliotecas
+
+uso de pip
+
+py -m ensurepip --upgrade
+
+py -m pip install "SomeProject"
+
+https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3
+https://www.programiz.com/python-programming/modules
+Python Modules and Packages – An Introduction – Real Python.html
